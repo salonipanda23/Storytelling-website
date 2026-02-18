@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rabbit and the Tortoise - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Rabbit and the Tortoise - Page 2</h1>
+    </header>
+    <main>
+        <img src="rabbit_tortoise_2.jpg" alt="Rabbit and Tortoise Story" class="story-image">
+        <p>
+        The day of the race arrived. The starting point was marked near a large oak tree, and the finish line was 
+        set near the riverbank. At the signal, the rabbit bolted forward, leaving the tortoise far behind. 
+        The spectators cheered, but most of them assumed the outcome was already clear.
+        
+        The rabbit, confident he would win, decided to stop midway to nibble on some fresh clover. 
+        Seeing no sign of the tortoise, he stretched out under a shady tree for a nap. 
+        “This race is as good as mine,” he thought before drifting off to sleep.
+        </p>
+        <audio id="page2Audio" src="page2.mp3" controls></audio>
+    </main>
+    <footer>
+        <div class="navigation">
+            <a href="page1.html">Previous</a>
+            <a href="page3.html">Next</a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('page2Audio');
+            if (audio) {
+                audio.play().catch(err => {
+                    console.log("Autoplay blocked:", err);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

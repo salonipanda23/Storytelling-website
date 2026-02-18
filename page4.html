@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rabbit and the Tortoise - Page 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Rabbit and the Tortoise - Page 4</h1>
+    </header>
+    <main>
+        <img src="rabbit_tortoise_4.jpg" alt="Rabbit and Tortoise Story" class="story-image">
+        <p>
+        The tortoise was just a few steps away from the finish line when the rabbit woke up. 
+        Realizing he had slept for too long, the rabbit panicked and dashed toward the finish line at top speed.
+        However, it was too late. With one final, determined step, the tortoise crossed the finish line just as the rabbit approached.
+        
+        The forest erupted in cheers for the tortoise. The rabbit, though embarrassed, acknowledged his defeat. 
+        From that day on, he learned to respect others and not underestimate anyone based on appearances.
+        
+        The moral of the story is: “Slow and steady wins the race.”
+        </p>
+        <audio id="page4Audio" src="page4.mp3" controls></audio>
+    </main>
+    <footer>
+        <div class="navigation">
+            <a href="page3.html">Previous</a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('page4Audio');
+            if (audio) {
+                audio.play().catch(err => {
+                    console.log("Autoplay blocked:", err);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

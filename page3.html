@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rabbit and the Tortoise - Page 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Rabbit and the Tortoise - Page 3</h1>
+    </header>
+    <main>
+        <img src="rabbit_tortoise_3.jpg" alt="Rabbit and Tortoise Story" class="story-image">
+        <p>
+        Meanwhile, the tortoise trudged on steadily, his eyes fixed on the path ahead. He did not let 
+        the rabbit’s earlier mockery discourage him. Every step he took brought him closer to the finish line.
+        
+        The forest grew quieter as the day went on, and soon, the tortoise spotted the riverbank in the distance. 
+        The rabbit, still snoozing under the tree, remained oblivious to the tortoise’s progress. 
+        The spectators, who had scattered to explore the forest, began returning to the path as they saw the tortoise nearing the end.
+        </p>
+        <audio id="page3Audio" src="page3.mp3" controls></audio>
+    </main>
+    <footer>
+        <div class="navigation">
+            <a href="page2.html">Previous</a>
+            <a href="page4.html">Next</a>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('page3Audio');
+            if (audio) {
+                audio.play().catch(err => {
+                    console.log("Autoplay blocked:", err);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
